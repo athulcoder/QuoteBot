@@ -34,8 +34,8 @@ class BotHandler:
 
 
 F = 'https://www.pinterest.com/blissquote/friendship-quotes-and-sayings/'
-token = "1903906828:AAGdBHc5AIkDTdIvqCSlkjU2DtJbyenaeEk"
-magnito_bot = BotHandler(token)
+token = "1835528031:AAGkpikELBzrz6g4RTx8arF4Tmo6C15IGYA"
+quote_bot = BotHandler(token)
 Quotes = 'https://verybestquotes.com/'
 
 
@@ -45,7 +45,7 @@ def main():
     print(c.upper())
 
     while True:
-        all_updates = magnito_bot.get_updates(new_offset)
+        all_updates = quote_bot.get_updates(new_offset)
 
         if len(all_updates) > 0:
             for current_update in all_updates:
@@ -74,26 +74,26 @@ def main():
                                        "Hello QuoteBot!", "Hi Quoter",
                                        'Hi Quoter.', "Hi QuoteBot!"):
 
-                    magnito_bot.send_message(
+                    quote_bot.send_message(
                         first_chat_id,
                         'Hello ' + first_chat_name,
                     )
                     new_offset = first_update_id + 1
                 if first_chat_text == '/start':
-                    magnito_bot.send_message(
+                    quote_bot.send_message(
                         first_chat_id,
                         "   Hi !My Name is QuoteBot  How Are you " +
                         first_chat_name)
                     new_offset = first_update_id + 1
                 if first_chat_text == 'Love':
-                    magnito_bot.send_message(
+                    quote_bot.send_message(
                         first_chat_id,
                         'Love http://www.planetofsuccess.com/blog/2016/short-love-quotes/'
                     )
                     new_offset = first_update_id + 1
 
                 if first_chat_text == 'Friendship':
-                    magnito_bot.send_message(
+                    quote_bot.send_message(
                         first_chat_id,
                         'Frendship Quotes https://www.pinterest.com/blissquote/friendship-quotes-and-sayings/'
                     )
@@ -107,26 +107,26 @@ def main():
                                        "I'm fine.", "I'm Good.", "I'm Good",
                                        "I'm Fine", "I'm Fine.", "Fine", "fine",
                                        "Fine.", "fine."):
-                    magnito_bot.send_message(
+                    quote_bot.send_message(
                         first_chat_id,
                         'Well, What type of Quote you need? "Friendship" , "Love", "Attitude","Famous Quotes"  For this Type Extactly What I have sent'
                     )
                     new_offset = first_update_id + 1
                 if first_chat_text == 'Attitude':
-                    magnito_bot.send_message(
+                    quote_bot.send_message(
                         first_chat_id,
                         'Attitude  Quotes https://quotesjin.com/attitude-quotes/'
                     )
                     new_offset = first_update_id + 1
                 if first_chat_text == 'Famous Quotes':
-                    magnito_bot.send_message(
+                    quote_bot.send_message(
                         first_chat_id,
                         'Famous Quotes https://blog.hubspot.com/sales/famous-quotes'
                     )
                     new_offset = first_update_id + 1
                 if first_chat_text in ('Thankyou', 'Thank you', 'Thankyou.',
                                        'Thanks', 'thanks', 'thankyou'):
-                    magnito_bot.send_message(
+                    quote_bot.send_message(
                         first_chat_id,
                         'Your Welcome ' + first_chat_name,
                     )
