@@ -76,7 +76,7 @@ def main():
 
                     quote_bot.send_message(
                         first_chat_id,
-                        'Hello ' + first_chat_name,
+                        'Hello, How are you ' + first_chat_name,
                     )
                     new_offset = first_update_id + 1
                 if first_chat_text == '/start':
