@@ -34,7 +34,7 @@ class BotHandler:
 
 
 F = 'https://www.pinterest.com/blissquote/friendship-quotes-and-sayings/'
-token = "1835528031:AAGkpikELBzrz6g4RTx8arF4Tmo6C15IGYA"
+token = input("Enter the token of the bot: ")
 quote_bot = BotHandler(token)
 Quotes = 'https://verybestquotes.com/'
 
