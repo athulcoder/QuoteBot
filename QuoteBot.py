@@ -83,7 +83,7 @@ def main():
                     quote_bot.send_message(
                         first_chat_id,
                         "   Hi !My Name is QuoteBot  How Are you " +
-                        first_chat_name)
+                        first_chat_name,)
                     new_offset = first_update_id + 1
                 if first_chat_text == 'Love':
                     quote_bot.send_message(
@@ -134,14 +134,20 @@ def main():
                 if first_chat_text in ("Ok","Okay","kk","Ok Thankyou","Okay Thankyou","ok","okay","okay thankyou","okay thanks","Ok Thanks","Okay Thanks",):
                     quote_bot.send_message(
                         first_chat_id,
-                        'Ok , Thanks For Using Me' + first_chat_name,
+                        'Ok , Thanks For Using Me ' + first_chat_name,
+                    )
+                    new_offset = first_update_id + 1
+                if first_chat_text in ("Bye","bye","Good Bye","Goodbye","good bye","Good Bye Bot","goodbye bot","Bye bye","byy","Byy","Bye Bot","Bye bye Bot"):
+                    quote_bot.send_message(
+                        first_chat_id,
+                        'Okay then, Bye ' + first_chat_name,
                     )
                     new_offset = first_update_id + 1
 
 
 if __name__ == '__main__':
 
-    try:
+    try
 
         main()
 
