@@ -78,27 +78,15 @@ def main():
                         first_chat_id,
                         'Hello, How are you ' + first_chat_name,
                     )
+
                     new_offset = first_update_id + 1
                 if first_chat_text == '/start':
                     quote_bot.send_message(
                         first_chat_id,
                         "   Hi !My Name is QuoteBot  How Are you " +
-                        first_chat_name,)
-                    new_offset = first_update_id + 1
-                if first_chat_text == 'Love':
-                    quote_bot.send_message(
-                        first_chat_id,
-                        'Love http://www.planetofsuccess.com/blog/2016/short-love-quotes/'
+                        first_chat_name,
                     )
                     new_offset = first_update_id + 1
-
-                if first_chat_text == 'Friendship':
-                    quote_bot.send_message(
-                        first_chat_id,
-                        'Frendship Quotes https://www.pinterest.com/blissquote/friendship-quotes-and-sayings/'
-                    )
-                    new_offset = first_update_id + 1
-
                 if first_chat_text in ("I am Fine", "I am Good", "I am fine",
                                        'I am Fine.', 'I am good', 'I am good.',
                                        'I am Good.', 'I am Well', 'I am Well.',
@@ -109,21 +97,51 @@ def main():
                                        "Fine.", "fine."):
                     quote_bot.send_message(
                         first_chat_id,
-                        'Well, What type of Quote you need? "Friendship" , "Love", "Attitude","Famous Quotes"  For this Type Extactly What I have sent'
+                        'Well, What type of Quote you need? "Friendship" , "Love", "Attitude", "Famous Quotes", "Motivational", "Inspirational". For this Type Extactly What I have sent'
                     )
                     new_offset = first_update_id + 1
-                if first_chat_text == 'Attitude':
+                if first_chat_text == 'attitude'.lower():
                     quote_bot.send_message(
                         first_chat_id,
                         'Attitude  Quotes https://quotesjin.com/attitude-quotes/'
                     )
                     new_offset = first_update_id + 1
-                if first_chat_text == 'Famous Quotes':
+
+                if first_chat_text == 'love'.lower():
+                    quote_bot.send_message(
+                        first_chat_id,
+                        'Love http://www.planetofsuccess.com/blog/2016/short-love-quotes/'
+                    )
+                    new_offset = first_update_id + 1
+
+                if first_chat_text == 'friendship'.lower():
+                    quote_bot.send_message(
+                        first_chat_id,
+                        'Frendship Quotes https://www.pinterest.com/blissquote/friendship-quotes-and-sayings/'
+                    )
+                    new_offset = first_update_id + 1
+
+                if first_chat_text == 'motivational'.lower():
+                    quote_bot.send_message(
+                        first_chat_id,
+                        'Motivational Quotes https://www.brainyquote.com/topics/motivational-quotes'
+                    )
+                    new_offset = first_update_id + 1
+
+                if first_chat_text == 'inspirational'.lower():
+                    quote_bot.send_message(
+                        first_chat_id,
+                        'Inspirational Quotes https://www.brainyquote.com/topics/inspirational-quotes'
+                    )
+                    new_offset = first_update_id + 1
+
+                if first_chat_text == 'famous quotes'.lower():
                     quote_bot.send_message(
                         first_chat_id,
                         'Famous Quotes https://blog.hubspot.com/sales/famous-quotes'
                     )
                     new_offset = first_update_id + 1
+
                 if first_chat_text in ('Thankyou', 'Thank you', 'Thankyou.',
                                        'Thanks', 'thanks', 'thankyou'):
                     quote_bot.send_message(
@@ -131,13 +149,29 @@ def main():
                         'Your Welcome ' + first_chat_name,
                     )
                     new_offset = first_update_id + 1
-                if first_chat_text in ("Ok","Okay","kk","Ok Thankyou","Okay Thankyou","ok","okay","okay thankyou","okay thanks","Ok Thanks","Okay Thanks",):
+
+                if first_chat_text in (
+                        "Ok",
+                        "Okay",
+                        "kk",
+                        "Ok Thankyou",
+                        "Okay Thankyou",
+                        "ok",
+                        "okay",
+                        "okay thankyou",
+                        "okay thanks",
+                        "Ok Thanks",
+                        "Okay Thanks",
+                ):
                     quote_bot.send_message(
                         first_chat_id,
                         'Ok , Thanks For Using Me ' + first_chat_name,
                     )
                     new_offset = first_update_id + 1
-                if first_chat_text in ("Bye","bye","Good Bye","Goodbye","good bye","Good Bye Bot","goodbye bot","Bye bye","byy","Byy","Bye Bot","Bye bye Bot"):
+                if first_chat_text in ("Bye", "bye", "Good Bye", "Goodbye",
+                                       "good bye", "Good Bye Bot",
+                                       "goodbye bot", "Bye bye", "byy", "Byy",
+                                       "Bye Bot", "Bye bye Bot"):
                     quote_bot.send_message(
                         first_chat_id,
                         'Okay then, Bye ' + first_chat_name,
