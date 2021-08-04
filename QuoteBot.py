@@ -1,5 +1,4 @@
 import requests
-import datetime
 
 
 class BotHandler:
@@ -8,7 +7,6 @@ class BotHandler:
         self.api_url = "https://api.telegram.org/bot{}/".format(token)
 
     #url = "https://api.telegram.org/bot<token>/"
-
     def get_updates(self, offset=0, timeout=30):
         method = 'getUpdates'
         params = {'timeout': timeout, 'offset': offset}
@@ -100,42 +98,42 @@ def main():
                         'Well, What type of Quote you need? "Friendship" , "Love", "Attitude", "Famous Quotes", "Motivational", "Inspirational". For this Type Extactly What I have sent'
                     )
                     new_offset = first_update_id + 1
-                if first_chat_text == 'attitude'.lower():
+                if first_chat_text == 'Attitude':
                     quote_bot.send_message(
                         first_chat_id,
                         'Attitude  Quotes https://quotesjin.com/attitude-quotes/'
                     )
                     new_offset = first_update_id + 1
 
-                if first_chat_text == 'love'.lower():
+                if first_chat_text == 'love':
                     quote_bot.send_message(
                         first_chat_id,
                         'Love http://www.planetofsuccess.com/blog/2016/short-love-quotes/'
                     )
                     new_offset = first_update_id + 1
 
-                if first_chat_text == 'friendship'.lower():
+                if first_chat_text == 'friendship':
                     quote_bot.send_message(
                         first_chat_id,
                         'Frendship Quotes https://www.pinterest.com/blissquote/friendship-quotes-and-sayings/'
                     )
                     new_offset = first_update_id + 1
 
-                if first_chat_text == 'motivational'.lower():
+                if first_chat_text == 'motivational':
                     quote_bot.send_message(
                         first_chat_id,
                         'Motivational Quotes https://www.brainyquote.com/topics/motivational-quotes'
                     )
                     new_offset = first_update_id + 1
 
-                if first_chat_text == 'inspirational'.lower():
+                if first_chat_text == 'inspirational':
                     quote_bot.send_message(
                         first_chat_id,
                         'Inspirational Quotes https://www.brainyquote.com/topics/inspirational-quotes'
                     )
                     new_offset = first_update_id + 1
 
-                if first_chat_text == 'famous quotes'.lower():
+                if first_chat_text == 'famous quotes':
                     quote_bot.send_message(
                         first_chat_id,
                         'Famous Quotes https://blog.hubspot.com/sales/famous-quotes'
