@@ -6,7 +6,7 @@ class BotHandler:
         self.token = token
         self.api_url = "https://api.telegram.org/bot{}/".format(token)
 
-    #url = "https://api.telegram.org/bot<token>/"
+    # url = "https://api.telegram.org/bot<token>/"
     def get_updates(self, offset=0, timeout=30):
         method = 'getUpdates'
         params = {'timeout': timeout, 'offset': offset}
