@@ -1,7 +1,6 @@
 #QuoteBot code
 
 import requests
-import datetime
 
 
 class BotHandler:
@@ -10,7 +9,6 @@ class BotHandler:
         self.api_url = "https://api.telegram.org/bot{}/".format(token)
 
     #url = "https://api.telegram.org/bot<token>/"
-
     def get_updates(self, offset=0, timeout=30):
         method = 'getUpdates'
         params = {'timeout': timeout, 'offset': offset}
@@ -102,6 +100,7 @@ def main():
                         'Well, What type of Quote you need? "1.Attitude" , "2.Love", "3.Friendship", "4.Motivational", "5.Inspirational","6.Famous Quotes". For this Send Me The Number Eg: for "Attitude" Send Me "1"'  
                     )
                     new_offset = first_update_id + 1
+
                 if first_chat_text == '1':
                     quote_bot.send_message(
                         first_chat_id,
