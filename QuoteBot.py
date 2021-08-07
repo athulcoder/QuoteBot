@@ -97,45 +97,45 @@ def main():
                                        "Fine.", "fine."):
                     quote_bot.send_message(
                         first_chat_id,
-                        'Well, What type of Quote you need? "Friendship" , "Love", "Attitude", "Famous Quotes", "Motivational", "Inspirational". For this Type Extactly What I have sent'
+                        'Well, What type of Quote you need? "1.Attitude" , "2.Love", "3.Friendship", "4.Motivational", "5.Inspirational","6.Famous Quotes". For this Send Me The Number Eg: for "Attitude" Send Me "1"'  
                     )
                     new_offset = first_update_id + 1
-                if first_chat_text == 'attitude'.lower():
+                if first_chat_text == '1':
                     quote_bot.send_message(
                         first_chat_id,
                         'Attitude  Quotes https://quotesjin.com/attitude-quotes/'
                     )
                     new_offset = first_update_id + 1
 
-                if first_chat_text == 'love'.lower():
+                if first_chat_text == '2':
                     quote_bot.send_message(
                         first_chat_id,
                         'Love http://www.planetofsuccess.com/blog/2016/short-love-quotes/'
                     )
                     new_offset = first_update_id + 1
 
-                if first_chat_text == 'friendship'.lower():
+                if first_chat_text == '3':
                     quote_bot.send_message(
                         first_chat_id,
                         'Frendship Quotes https://www.pinterest.com/blissquote/friendship-quotes-and-sayings/'
                     )
                     new_offset = first_update_id + 1
 
-                if first_chat_text == 'motivational'.lower():
+                if first_chat_text == '4':
                     quote_bot.send_message(
                         first_chat_id,
                         'Motivational Quotes https://www.brainyquote.com/topics/motivational-quotes'
                     )
                     new_offset = first_update_id + 1
 
-                if first_chat_text == 'inspirational'.lower():
+                if first_chat_text == '5':
                     quote_bot.send_message(
                         first_chat_id,
                         'Inspirational Quotes https://www.brainyquote.com/topics/inspirational-quotes'
                     )
                     new_offset = first_update_id + 1
 
-                if first_chat_text == 'famous quotes'.lower():
+                if first_chat_text == '6':
                     quote_bot.send_message(
                         first_chat_id,
                         'Famous Quotes https://blog.hubspot.com/sales/famous-quotes'
