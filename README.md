@@ -12,7 +12,7 @@
 ###              |____ Inspiration
 ###              |
 ###              |____ Motivation
-# Indules       -|
+# INCLUDES      -|
 ###              |____ Love 
 ###              |
 ###              |____ Friendship
