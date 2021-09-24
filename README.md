@@ -6,6 +6,7 @@
 
 #### • This bot was made using python with the job to provide the user with quote links with different variety of genres.
 #### • we can make conversation.
+
           
 ###               ____ Attitude
 ###              |
