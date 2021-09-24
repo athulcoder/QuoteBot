@@ -4,17 +4,18 @@
 
 ## Feature.
 
-• This bot was made using python with the job to provide the user with quote links with different variety of genres.
-• we can make conversation.
-            ____ Attitude
-           |
-           |____ Inspiration
-           |
-           |____ Motivation
-Indules ---|
-           |____ Love 
-           |
-           |____ Friendship
-           |
-           |____ 
-           |
+#### • This bot was made using python with the job to provide the user with quote links with different variety of genres.
+#### • we can make conversation.
+          
+###               ____ Attitude
+###              |
+###              |____ Inspiration
+###              |
+###              |____ Motivation
+# Indules       -|
+###              |____ Love 
+###              |
+###              |____ Friendship
+###              |
+###              |____ 
+###              |
