@@ -2,7 +2,7 @@
 
 import requests
 
-
+input_msg = ["Hi",'hi','Hello','Hai','hello','hai','Hi Quoter','fine','Fine','Good','good','well','Well','Bye','Tnx','Thanks','Thank you','1','2','3','4','5','6','I am fine','I am good',"I'm fine"]
 class BotHandler:
     def __init__(self, token):
         self.token = token
@@ -35,7 +35,7 @@ class BotHandler:
 
 
 i ='api token'
-token = input(f"Enter The {i.upper()} Of Your Bot:>>>")
+token = "1864087548:AAG-Mm9sEwHyjAAgjNqs0XGgyxlom8GE6pQ"
 quote_bot = BotHandler(token)
 Quotes = 'https://verybestquotes.com/'
 
@@ -112,9 +112,8 @@ def main():
                         5.Inspirational😃
                         
                         6.Famous Quotes⚡
-
 For this Send Me The Number
- Example(for "Attitude" Send Me "1'')   ''' 
+eg(for "Attitude" Send Me "1'')   ''' 
                     )
                     new_offset = first_update_id + 1
 
@@ -125,42 +124,42 @@ For this Send Me The Number
                     )
                     new_offset = first_update_id + 1
 
-                if first_chat_text == '2':
+                elif first_chat_text == '2':
                     quote_bot.send_message(
                         first_chat_id,
                         'Love http://www.planetofsuccess.com/blog/2016/short-love-quotes/'
                     )
                     new_offset = first_update_id + 1
 
-                if first_chat_text == '3':
+                elif first_chat_text == '3':
                     quote_bot.send_message(
                         first_chat_id,
                         'Frendship Quotes https://www.pinterest.com/blissquote/friendship-quotes-and-sayings/'
                     )
                     new_offset = first_update_id + 1
 
-                if first_chat_text == '4':
+                elif first_chat_text == '4':
                     quote_bot.send_message(
                         first_chat_id,
                         'Motivational Quotes https://www.brainyquote.com/topics/motivational-quotes'
                     )
                     new_offset = first_update_id + 1
 
-                if first_chat_text == '5':
+                elif first_chat_text == '5':
                     quote_bot.send_message(
                         first_chat_id,
                         'Inspirational Quotes https://www.brainyquote.com/topics/inspirational-quotes'
                     )
                     new_offset = first_update_id + 1
 
-                if first_chat_text == '6':
+                elif first_chat_text == '6':
                     quote_bot.send_message(
                         first_chat_id,
                         'Famous Quotes https://blog.hubspot.com/sales/famous-quotes'
                     )
                     new_offset = first_update_id + 1
 
-                if first_chat_text in ('Thankyou', 'Thank you', 'Thankyou.',
+                elif first_chat_text in ('Thankyou', 'Thank you', 'Thankyou.',
                                        'Thanks', 'thanks', 'thankyou'):
                     quote_bot.send_message(
                         first_chat_id,
@@ -168,7 +167,7 @@ For this Send Me The Number
                     )
                     new_offset = first_update_id + 1
 
-                if first_chat_text in (
+                elif first_chat_text in (
                         "Ok",
                         "Okay",
                         "kk",
@@ -186,7 +185,7 @@ For this Send Me The Number
                         'Ok , Thanks For Using Me ' + first_chat_name,
                     )
                     new_offset = first_update_id + 1
-                if first_chat_text in ("Bye", "bye", "Good Bye", "Goodbye",
+                elif first_chat_text in ("Bye", "bye", "Good Bye", "Goodbye",
                                        "good bye", "Good Bye Bot",
                                        "goodbye bot", "Bye bye", "byy", "Byy",
                                        "Bye Bot", "Bye bye Bot"):
@@ -195,6 +194,10 @@ For this Send Me The Number
                         'Okay then, Bye ' + first_chat_name,
                     )
                     new_offset = first_update_id + 1
+                elif first_chat_text not in input_msg:
+                	quote_bot.send_message(first_chat_id,"Sorry I didn't get You, Please Say that again")
+                	new_offset = first_update_id + 1
+                
 
 
 if __name__ == '__main__':
