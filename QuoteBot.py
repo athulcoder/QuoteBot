@@ -2,7 +2,7 @@
 
 import requests
 
-input_msg = ["Hi",'hi','Hello','Hai','hello','hai','Hi Quoter','fine','Fine','Good','good','well','Well','Bye','Tnx','Thanks','Thank you','1','2','3','4','5','6','I am fine','I am good',"I'm fine"]
+input_msg = ["Hi",'hi','Hello','Hai','hello','hai','Hi Quoter','fine','Fine','Good','good','well','Well','Bye','Tnx','Thanks','Thank you','1','2','3','4','5','6','I am fine','I am good',"I'm fine","Ok"]
 class BotHandler:
     def __init__(self, token):
         self.token = token
