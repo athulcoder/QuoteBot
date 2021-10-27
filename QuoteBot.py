@@ -35,7 +35,7 @@ class BotHandler:
 
 
 i ='api token'
-token = "1864087548:AAG-Mm9sEwHyjAAgjNqs0XGgyxlom8GE6pQ"
+token = input("Enter the API token : ")
 quote_bot = BotHandler(token)
 Quotes = 'https://verybestquotes.com/'
 
