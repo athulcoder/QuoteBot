@@ -195,7 +195,7 @@ eg(for "Attitude" Send Me "1'')   '''
                     )
                     new_offset = first_update_id + 1
                 elif first_chat_text not in input_msg:
-                	quote_bot.send_message(first_chat_id,"Sorry I didn't get You, Please Say that again")
+                	quote_bot.send_message(first_chat_id,"Soory ... I didn't Get You , What type of Quote you need?")
                 	new_offset = first_update_id + 1
                 
 
