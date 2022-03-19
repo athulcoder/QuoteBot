@@ -1,4 +1,4 @@
-# _QuoteBot_codes_ 
+# _QuoteBot_codes_
 
 import requests
 
